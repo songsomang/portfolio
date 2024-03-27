@@ -410,8 +410,8 @@ footer p {
 
 .certifications {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /
-    gap: 20px; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 그리드 템플릿 열 정의 */
+    gap: 20px; /* 그리드 아이템 사이의 간격 설정 */
 }
 
 .certification-card {
