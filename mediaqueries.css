@@ -98,8 +98,17 @@
       font-size: 2rem;
     }
     .text-container {
-      text-align: justify;
-    }
+      text-align: justify; /* 기본 텍스트 정렬 설정 */
+  }
+  
+  /* 핸드폰 화면 크기에서만 적용되는 스타일 */
+  @media only screen and (max-width: 768px) {
+      .text-container {
+          text-align: left; /* 텍스트를 왼쪽으로 정렬 */
+      }
+  }
+  
+
     @media screen and (max-width: 480px) {
         .experience-box {
             flex-direction: column; /* 가로 배치에서 세로 배치로 변경 */
