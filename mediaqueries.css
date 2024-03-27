@@ -47,6 +47,31 @@
     }
   }
   
+  @media screen and (max-width: 768px) {
+    .experience-box {
+        flex-direction: column; /* 가로 배치에서 세로 배치로 변경 */
+    }
+
+    .left-column,
+    .right-column {
+        flex: 1; /* 왼쪽과 오른쪽 컬럼이 모두 동일한 너비를 가지도록 함 */
+    }
+
+    .left-column {
+        padding-right: 0; /* 오른쪽 패딩 제거 */
+        margin-bottom: 10px; /* 좌우 간격 보다는 위아래 간격을 줄임 */
+    }
+
+    .right-column {
+        margin-left: 0; /* 왼쪽 마진 제거 */
+    }
+
+    .skills {
+        margin-top: 20px; /* Skills 위에 간격 추가 */
+    }
+}
+
+
   @media screen and (max-width: 600px) {
     #contact,
     footer {
