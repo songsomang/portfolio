@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio </title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Somang (Elena) Song</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Elena Song</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Elena Song profile-pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Elena Song</h1>
+            <p class="section__text__p2">Software Developer</p>
+            <div class="btn-container">
+                <button
+                  class="btn btn-color-2"
+                  onclick="window.open('./assets/resume-example.pdf')">
+                  Resume
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                  Contact Info
+                </button>
+              </div>
+              <div id="socials-container">
+                <img
+                  src="./assets/linkedin.png"
+                  alt="My LinkedIn profile"
+                  class="icon"
+                  onclick="location.href='https://www.linkedin.com/in/somangsong1024/'"
+                />
+                <img
+                  src="./assets/github.png"
+                  alt="My Github profile"
+                  class="icon"
+                  onclick="location.href='https://github.com/songsomang'"
+                />
+              </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/about-pic.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>2+ years Research Analyst<br />1+ years Self-taught Developer</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>B.S. Genetic Engineering<br />M.S. Biotechnology in Neuroscience<br />M.S. Information and Library Science</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                    Hello there, <br />
+                    I'm Elena, a passionate software developer specializing in backend systems and data-driven solutions. 
+                    Through diverse project experiences, I've refined my expertise in optimizing database performance. 
+                    I excel in collaborative settings, leveraging my problem-solving abilities to contribute effectively and learn from others. 
+                    Outside of work, I enjoy indulging in creative pursuits like building with Lego and exploring photography.
+                </p>
+              </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section__title">Skillset</h2>
+        <div class="skillset">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skills">
+                    <div class="skill-box">MySQL</div>
+                    <div class="skill-box">Python</div>
+                    <div class="skill-box">PHP</div>
+                    <div class="skill-box">Shell Scripting</div>
+            </div>
+            <div class="skill-category">
+                <h3>Cloud & Infrastructure</h3>
+                <div class="skills">
+                    <div class="skill-box">AWS(Amazon Web Services)</div>
+                    <div class="skill-box">Docker</div>
+                    <div class="skill-box">Kubernetes</div>
+                    <div class="skill-box">Linux</div>
+                </div>
+            <div class="skill-category">
+                <h3>Skills</h3>
+                <div class="skills">
+                    <div class="skill-box">Data Analysis</div>
+                    <div class="skill-box">Database Modeling</div>
+                    <div class="skill-box">Machine Learning</div>
+                    <div class="skill-box">Statistical Testing</div>
+                    <div class="skill-box">CI/CD</div>
+                    <div class="skill-box">Agile Methodology</div>
+                </div>    
+            </div>
+            <!-- Add more skill categories and their corresponding skills -->
+        </div>
+        
+        
+        <div id="certifications">
+            <h2 class="section__title">Certifications</h2>
+            <div class="certifications">
+                <div class="certification-card">
+                    <h3>AWS cloud practitioner</h3>
+                    <p>Issued by: AWS</p>
+                    <p>Date: April 2024</p>
+                    <a href="#">View Certificate</a>
+                </div>
+                <div class="certification-card">
+                    <h3>Introduction to Cloud Computing</h3>
+                    <p>Issued by: IBM</p>
+                    <p>Date: March 2024</p>
+                    <a href='https://www.coursera.org/account/accomplishments/verify/KPKF6VMUR3N5'>View Certificate</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-box">
+            <div class="left-column">
+                <p class="date">May 2022 - Sep 2022</p>
+            </div>
+            <div class="right-column">
+                <h3>University of North Carolina at Chapel Hill - Data Analyst Intern</h3>
+                <p>I developed Python libraries to characterize and analyze diagnostic features related to social risk factors, 
+                enhancing the capability to understand health disparities. 
+                Additionally, I designed and executed statistical models, such as linear regression and two-way ANOVA,
+                to investigate the impact of social determinants on patient care quality. 
+                Utilizing Tableau, I created data visualizations illustrating the impact of socio-economic factors on healthcare outcomes
+                based on 22k+ EPIC Electronic Health Records (EHRs) from NC's Women's Hospital.</p>
+                <div class="skills">
+                    <div class="skill-box">Python</div>
+                    <div class="skill-box">MySQL</div>
+                    <div class="skill-box">Tableau</div>
+                    <div class="skill-box">Agile Methodology</div>
+                </div>
+            </div>
+        </div>
+            <div class="experience-box">
+                <div class="left-column">
+                    <p class="date">Sep 2020 - June 2021</p>
+                </div>
+                <div class="right-column">
+                    <h3>Chungnam National University Hospital - Research Associate</h3>
+                    <p>I collaborated with a cross-functional team to optimize SQL database performance, ensuring efficient access to critical patient data and reducing query response times by 25%. Together, we designed and implemented a comprehensive COVID-19 patient outcome reporting system, providing daily, accurate, and real-time insights for clinical evaluations during the pandemic. Additionally, in collaboration with another team, we transformed PubMed XML data into a structured CSV format for SQL database ingestion, facilitating efficient data analysis and research.</p>
+                    <div class="skills">
+                        <div class="skill-box">Python</div>
+                        <div class="skill-box">PostgreSQL</div>
+                        <div class="skill-box">CSV</div>
+                        <div class="skill-box">XML</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>    
+        <div class="project-card">
+            <h3>Sports Statistics and Predictions</h3>
+            <p>Developed a machine learning model for predicting sports match outcomes by collecting the European Soccer match database. Conducted in-depth exploratory data analysis (EDA) to identify relevant patterns and relationships. Leveraged a diverse array of machine learning algorithms, including logistic regression and XGBoost to create a robust prediction model. Evaluated model performance using metrics like accuracy, precision, and recall with cross-validation to ensure reliability. </p>
+            <a href='https://github.com/songsomang/Python/blob/main/Kaggle-%20European%20Soccer%20Database%20(Preprocessing%2C%20Classification).ipynb'>Learn more</a>
+        </div>
+    
+        <div class="project-card">
+            <h3>Cross-Platform Design for Subscriptions – Database System Project </h3>
+            <p>Architected Enhanced Entity-Relationship (EER) diagram to establish a data model with normalized relations and functional dependencies tailored to bicycle subscription services. Utilized PHP and MySQL in the XAMPP environment to facilitate efficient data loading such as time slot availability and reservation features. </p>
+        </div>
+    
+        <div class="project-card">
+            <h3>System Analysis Project (Collaborated with The Center for Discovery, New York)</h3>
+            <p>Researched electronic health record systems such as SigmaCare and eClinicalWorks. Interviewed healthcare professionals to analyze operational issues and assess the advantages and disadvantages of hybrid EHR. Utilized Agile methodology, Sequence Model, and Affinity Diagram for effective system analysis, focusing on optimizing eMAR benefits.</p>
+        </div>
+    
+    </section>
+
+
+
+
+
+
+
+      
+      
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:92songsm@gmail.com">Email</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/somangsong1024/">LinkedIn</a></p>
+          </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+        <p>Modified by Elena Song on 2024 for Portfolio.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
